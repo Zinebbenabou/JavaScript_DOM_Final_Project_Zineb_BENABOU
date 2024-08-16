@@ -1,19 +1,37 @@
-@font-face 
+@font-face
     font-family: interFont
     src: url(../../public/fonts/Comic_Neue,Inter/Inter/Inter-Italic-VariableFont_opsz,wght.ttf)
 
 *
     margin: 0
     padding: 0
+    overflow-x: 0
+
 nav
     display: flex
     align-items: center
     justify-content: space-around
+    overflow: hidden
+    position: fixed
+    top: 0
+    width: 100%
+    padding: 6px
+    background-color: #fff
+    z-index: 9999
+    .display-menu
+        display: none
+
     .menu-nav
         display: flex
         align-items: center
         justify-content: space-between
         gap: 12px
+
+        .close-menu
+            display: none
+            position: relative
+            top: 0
+            right: 50%
 
     h1
         span
@@ -31,3 +49,47 @@ nav
         background-color: #d94545
         border: none
         width: 120px
+.dropDown
+    color: #000000a4
+    &:hover
+        color: #d94545
+
+@media (max-width: 430px)
+    body
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        width: 100%
+    nav
+        width: 100%
+        position: fixed
+        overflow: hidden
+        display: flex
+        align-items: center
+        justify-content: space-between
+        top: 0
+        .menu-nav
+            background: white
+            margin-left: 2px
+            flex-direction: column
+            display: none
+            align-content: center
+            justify-content: center
+            gap: 3vh
+            box-shadow: 0 -3px 18px gray
+            border-radius: 15px
+            padding: 30px
+            position: fixed
+            top: 100px
+            width: 90%
+            height: 80%
+            .close-menu
+                display: flex
+                font-size: 20px
+        .display-menu
+            display: flex
+            cursor: pointer
+            font-size: 20px
+//  Hero section 
+

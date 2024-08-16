@@ -1,83 +1,56 @@
-let form = document.querySelector(".form");
-let inputTask = document.querySelector("input");
-let buttonTask = document.querySelector("button");
-let todo = document.querySelector(".list");
+let body = document.querySelector("body")
+let dispalyMenu = document.querySelector(".display-menu")
+let navMenu = document.querySelector(".menu-nav")
+let closeMenu = document.querySelector(".close-menu")
+let logo = document.querySelector(".logo")
+let signInBtn = document.querySelector(".signinbtn")
+let watchVideo = document.querySelector(" .bi-play-fill")
+let video = document.querySelector(".containerVideo")
 
-buttonTask.addEventListener("click", () => {
-  let value = inputTask.value;
-  if (!value) {
-    return;
-  } else {
-    let newDivTask = document.createElement("div");
-    newDivTask.className = "swim-lane";
-    let newTask = document.createElement("input");
-    newTask.readOnly = true;
-    newTask.classList.add = "task";
-    let icons = document.createElement("div");
-    let deleteIcon = document.createElement("i");
-    deleteIcon.className = "bi bi-trash3";
-    let editIcon = document.createElement("i");
-    editIcon.className = "bi bi-pencil-square";
-    newDivTask.setAttribute("draggable", "true");
-    newTask.value = value;
-    console.log(newDivTask);
-    todo.appendChild(newDivTask);
-    newDivTask.appendChild(newTask);
-    newDivTask.appendChild(icons);
-    icons.appendChild(deleteIcon);
-    icons.appendChild(editIcon);
-    inputTask.value = "";
-    deleteIcon.addEventListener("click", () => {
-      newDivTask.remove();
-    });
-    editIcon.addEventListener("click", () => {
-      if (newTask.readOnly == true) {
-        newTask.readOnly = false;
+dispalyMenu.addEventListener("click", ()=>{
+  navMenu.style.display="flex"
+  body.style.backgroundColor = " #000000bc"
+  
+})
+closeMenu.addEventListener("click", ()=>{
+   navMenu.style.display="none"
+   body.style.backgroundColor = "#fff"
+})
+watchVideo.addEventListener("click", ()=>{
+  video.style.display= "flex"
+  body.style.backgroundColor = " #000000bc"
 
-        newTask.focus();
-      } else {
-        newTask.readOnly = true;
-      }
-    });
-  }
-  dragTasks();
-});
 
-// & Drag and Drop
-let drag = null;
-const dragTasks = () => {
-  let taskes = document.querySelectorAll(".swim-lane");
-  console.log(taskes);
+})
+// & menu
+let tabs = document.querySelectorAll(".tab-btn")
+let menu = document.querySelectorAll(".content-box")
+let menuTitle = document.querySelectorAll(".title-about")
+let starters = document.querySelector("#starters")
+let breakfast = document.querySelector("#breakfast")
+let lunch = document.querySelector("#lunch")
+let dinner = document.querySelector("#dinner")
+let contentBox = document.querySelector("content-box ") 
+tabs.forEach((tab )=> {
+  tab.addEventListener("click", ()=>{
+    tabs.forEach(tab =>{tab.classList.remove("active")})
+    tab.classList.add("active")
+  })
+});  
 
-  taskes.forEach((task) => {
-    console.log(task);
+breakfast.addEventListener("click",()=>{
+  menuTitle[2].textContent= "Breakfast"
+  contentBox.classList.add("animation-menu")
+})
+starters.addEventListener("click",()=>{
+  menuTitle[2].textContent= "Starters"
+  contentBox.classList.add("animation-menu")
+})
+lunch.addEventListener("click",()=>{
+  menuTitle[2].textContent= "Lunch"
+})
+dinner.addEventListener("click",()=>{
+  menuTitle[2].textContent= "Dinner"
 
-    task.addEventListener("dragstart", () => {
-      drag = task;
-      task.style.opacity = "0.5";
-    });
-    task.addEventListener("dragend", () => {
-      drag = null;
-      task.style.opacity = "1";
-    });
-    let boxes = document.querySelectorAll(".list")
-    boxes.forEach((box) => {
-      box.addEventListener("dragover", (e) => {
-        e.preventDefault()
-        box.style.background = "#d28d5f";
-        box.style.color = "#fefefe";
-      });
-      box.addEventListener("dragleave", () => {
-        box.style.background = "#fefefe";
-        box.style.color = "#d28d5f";
-      });
-      box.addEventListener("drop", ()=>{
-        box.append(drag )
-        box.style.background = "#fefefe";
-        box.style.color = "#d28d5f";
-      })
-    });
-  });
-};
+})
 
-dragTasks();

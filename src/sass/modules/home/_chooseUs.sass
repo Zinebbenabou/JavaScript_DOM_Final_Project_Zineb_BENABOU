@@ -1,0 +1,107 @@
+.majeur
+    background-color: #bfbfbf46
+    .container-choose
+        display: flex
+        align-items: center
+        justify-content: space-around
+        margin-top: 30px
+        padding-top: 50px
+        // background-color: #bfbfbf46
+        margin-bottom: 20px
+        .one
+            width: 25%
+            color: #fff
+            background-color: #de2c2c
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            gap: 3.5vh
+            padding: 15px
+            text-align: center
+            button
+                display: flex
+                justify-content: center
+                align-items: center
+                border: none
+                border-radius: 20px
+                background-color: #d94545
+                color: #fff
+                padding: 5px 10px
+                &:hover
+
+                    background-color: #fff
+                    color: #de2c2c
+                a
+                    text-decoration: none
+                    color: #fff
+                    &:hover
+                        color: #de2c2c
+
+        .two
+            width: 15%
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            gap: 1vh
+            background-color: #fff
+            padding: 30px
+            text-align: center
+            i
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: 25px
+                color: #ce1212
+                border-radius: 50%
+                background-color: #ce12120f
+                padding: 10px
+                width: 50px
+                height: 50px
+                &:hover
+                    background-color: #ce1212
+                    color: #fff
+    .statistics
+        background-image: url(../images/stats-bg.jpg)
+        position: relative
+        padding: 50px
+        width: 100%
+        background-size: 100% 100%
+        height: 70vh
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            width: 100%
+            height: 100%
+            background-color: rgba(0,0 ,0 ,0.278 )
+        .content
+            display: flex 
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            color: #ffffff
+            z-index: 999
+            h1
+                font-weight: 600
+                font-size: 50px
+            p
+                color: #ffffff9a
+@media (max-width: 430px)
+    .majeur
+        .container-choose
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 2vh
+            .one
+                width: 90%
+            .two
+                width: 90%
+        .statistics
+            flex-direction: column
+            justify-content: center
+            gap: 1vh
+            height: 100vh
+            padding: 10px

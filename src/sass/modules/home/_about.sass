@@ -1,0 +1,74 @@
+// about us 
+.aboutUs
+    // width: 100vw
+    div
+        text-align: center
+        padding-top: 10px
+        p
+            color: #0000008d
+        .title-about
+            font-family: amatic
+            font-weight: 500
+            font-size: 60px
+            span
+                color: #d94545
+.container-aboutUs
+    // width: 100vw
+    display: flex
+    align-items: center
+    justify-content: space-around
+    .right-about
+        img
+            width: 650px
+        .bookTable
+            width: 100%
+            margin-top: 10px
+            border: solid 2px #32343587
+            // padding: 10px 10px
+        .number
+            color: #d94545
+    .left-about
+        width: 35%
+        ul
+            list-style-type: none
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+            li
+                text-align: center
+                i
+                    color: #d94545
+@media (max-width: 430px)
+    .aboutUs
+        width: 100%
+        div
+            text-align: center
+            padding-top: 10px
+            p
+                color: #0000008d
+            .title-about
+                font-family: amatic
+                font-weight: 300
+                font-size: 40px
+                
+
+    .container-aboutUs
+        flex-direction: column
+        .right-about
+
+            img
+                width: 90%
+            .bookTable
+                width: 90%
+        .left-about
+            width: 100%
+            ul
+                width: 80%
+
+                li
+                    text-align: center
+            .vid-about
+                iframe
+                    width: 300px

@@ -1,0 +1,100 @@
+@font-face
+    font-family: amatic
+    src: url(../../public/fonts/Amatic_SC,Comic_Neue,Inter/Amatic_SC/AmaticSC-Regular.ttf)
+@keyframes up-down
+    to
+        transform: translateY(-20px)
+
+.hero-section
+    position: relative
+    padding: 50px
+    background-color: #bfbfbf46
+    .leftHero
+        width: 60%
+        h1
+            font-family: amatic
+            font-size: 60px
+        p
+            font-family: interFont
+            font-size: 20px
+            color: #00000092
+.btns
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    gap: 15px
+    width: 60%
+    .book
+        padding: 6px 15px
+        background-color: #d94545
+        border-radius: 20px
+        border: none
+        color: #fff
+    .watch
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 5px
+        button
+            border-radius: 50%
+            padding: 4px
+            width: 30px
+            height: 30px
+            border: 2px solid #d94545
+            text-align: center
+            display: flex
+            justify-content: center
+            align-items: center
+            .bi-play-fill
+                color: #d94545
+        label
+            font-weight: bold
+.animated-image
+    img
+        box-sizing: border-box
+        animation-name: up-down
+        animation-duration: 1s
+        animation-iteration-count: infinite
+        animation-direction: alternate
+.containerVideo
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.24)
+    position: fixed
+    overflow: hidden
+    display: flex
+    justify-content: center
+    align-items: center
+    display: none
+    iframe
+        width: 90vw
+        height: 100vh
+
+@media (max-width: 430px)
+    .header
+        display: flex
+        flex-direction: column-reverse
+        width: 100%
+    .hero-section
+        width: 100%
+        padding: 10px
+        padding-top: 30px
+        .leftHero
+            width: 100%
+            h1
+                font-size: 40px
+                p
+                    font-size: 20px
+    .animated-image
+        img
+            width: 200px
+    .btns
+        width: 100%
+
+    .book
+        padding: 3px 4px
+        border-radius: 20px
+    .watch
+        display: flex
+        justify-content: center
+        align-items: center

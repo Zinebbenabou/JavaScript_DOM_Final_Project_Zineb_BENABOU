@@ -7,33 +7,275 @@
     <link rel="stylesheet" href="./public/css/app.css" />
   </head>
   <body>
-  <nav>
-    <h1 class="logo">Yummy <span>.</span></h1>
-    <div class="menu-nav">
-      <a href="">Home</a>
-      <a href="">About</a>
-      <a href="">Menu</a>
-      <a href="">Events</a>
-      <a href="">Chefs</a>
-      <a href="">Gallery</a>
-      <a href="">DropDown</a>
-      <a href="">Conatct</a>
+    <!-- nav-bar -->
+    <nav>
+      <h1 class="logo">Yummy <span>.</span></h1>
+      <div class="menu-nav">
+        <div class="close-menu">
+          <i class="bi bi-x"></i>
+        </div>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Menu</a>
+        <a href="">Events</a>
+        <a href="">Chefs</a>
+        <a href="">Gallery</a>
+        <div class="dropdown">
+          <a
+            class="btn btn-secondary dropdown-toggle bg-white text-dark border-0 dropDown"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropdown link
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <a href="">Contact</a>
+      </div>
+      <div>
+        <button class="signinbtn">Sing In</button>
+      </div>
+      <div class="display-menu">
+        <i class="bi bi-list"></i>
+      </div>
+    </nav>
+    <!-- Hero section -->
+    <div class="hero-section">
+      <div
+        class="header d-flex justify-content-between align-items-center mt-5"
+      >
+        <div>
+          <div class="leftHero">
+            <h1>Enjoy Your Healthy Delicious Food</h1>
+            <p>
+              We are team of talented designers making websites with Bootstrap
+            </p>
+          </div>
+
+          <div class="btns">
+            <button class="book">Book a table</button>
+            <div class="watch">
+              <button><i class="bi bi-play-fill"></i></button>
+              <label for="">Watch video</label>
+              <div class="containerVideo">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/ZanweKTLHP0?si=Hb7Y4UKsK0xPmnTc"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="animated-image">
+          <img width="400px" src="./public/images/hero-img.png" alt="" />
+        </div>
+      </div>
     </div>
-    <div>
-      <button>SingIn</button>
+    <!-- About Us  -->
+    <div class="aboutUs">
+      <div>
+        <p>About us</p>
+        <h3 class="title-about">learn more <span>about us </span></h3>
+      </div>
+      <div class="container-aboutUs">
+        <div
+          class="right-about d-flex justify-content-center align-items-center flex-column"
+        >
+          <img src="./public/images/about.jpg" alt="" />
+          <div class="text-center bookTable">
+            <h3>Book a table</h3>
+            <h3 class="number">+1 5589 55488 55</h3>
+          </div>
+        </div>
+        <div
+          class="left-about d-flex justify-content-center align-items-center flex-column"
+        >
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+
+          <ul
+            class="d-flex justify-content-center align-items-center flex-column list-unstyled gap-4"
+          >
+            <li>
+              <i class="bi bi-check-circle-fill"></i> &nbsp; Ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill"></i> &nbsp; Duis aute irure
+              dolor in reprehenderit in voluptate velit.
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill"></i>&nbsp; &nbsp; Ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in voluptate
+            </li>
+          </ul>
+
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            eu fugiat nulla pariatur.
+          </p>
+          <div class="vid-about">
+            <iframe
+              width="350"
+              height="315"
+              src="https://www.youtube.com/embed/ZanweKTLHP0?si=Hb7Y4UKsK0xPmnTc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </div>
-  </nav>
+    <!-- Why choose us -->
 
+    <div class="majeur">
+      <div class="container-choose">
+        <div class="one">
+          <h1>Why Choose Yummy</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+            aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur
+            quia eos. Autem tempore quibusdam vel necessitatibus optio ad
+            corporis.
+          </p>
+          <button>
+            <a href="#">Learn more <i class="bi bi-chevron-right"></i></a>
+          </button>
+        </div>
+        <div class="two">
+          <i class="bi bi-clipboard-data"></i>
+          <h3>Corporis voluptates officia eiusmod</h3>
+          <p>
+            Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris
+            nisi ut aliquip
+          </p>
+        </div>
+        <div class="two">
+          <i class="bi bi-gem"></i>
+          <h3>Ullamco laboris ladore lore pan</h3>
+          <p>
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt
+          </p>
+        </div>
+        <div class="two">
+          <i class="bi bi-inboxes"></i>
+          <h3>Labore consequatur incidid dolore</h3>
+          <p>
+            Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores
+            omnis facere
+          </p>
+        </div>
+      </div>
+      <div class="statistics d-flex justify-content-around align-items-center">
+        <div class="content">
+          <h1>232</h1>
+          <p>Clients</p>
+        </div>
+        <div class="content">
+          <h1>521</h1>
+          <p>Projects</p>
+        </div>
+        <div class="content">
+          <h1>1453</h1>
+          <p>Hours of supports</p>
+        </div>
+        <div class="content">
+          <h1>32</h1>
+          <p>Workers</p>
+        </div>
+      </div>
+    </div>
+    <!-- Menu -->
+    <div class="conatiner-menu">
+      <div class="menu-title">
+        <p>Our menu</p>
+        <h3 class="title-about">Check our <span>Yummy Menu</span></h3>
+      </div>
+      <div class="tab-links">
+        <button id="starters" class="tab-btn active">Starters</button>
+        <button id="breakfast" class="tab-btn">Breakfast</button>
+        <button id="lunch" class="tab-btn">Lunch</button>
+        <button id="dinner" class="tab-btn">Dinner</button>
+      </div>
+      
+      <div class="content-box  ">
+        <div class="box-title d-flex justify-content-center align-items-center flex-column">
+          <p>Menu</p>
+          <h3 class="title-about ">Starters</h3>
+        </div>
+        <div class=" content-menu d-flex justify-content-around align-items-center gap-5 flex-lg-row flex-column   " >
+          <div class="content">
+            <img src="./public/./images/menu/menu-item-1.png" alt="" />
+            <h4>Magnam Tiste</h4>
+            <p>Lorem, deren, trataro, filede, nerada</p>
 
+            <h5>$5.95</h5>
+          </div>
+          <div class="content">
+            <img src="./public/images/menu/menu-item-2.png" alt="" />
+            <h4>Lorem, ipsum.</h4>
+            <p>Lorem ,ipsum, dolor ,sit </p>
+            <h5>$14.95</h5>
+          </div>
+          <div class="content">
+            <img src="./public/images/menu/menu-item-3.png" alt="" />
+            <h4>Est Eligendi</h4>
+            <p>Lorem, deren, trataro, filede, nerada</p>
+            <h5>$8.95</h5>
+          </div>
+        </div>
+        <div class=" content-menu d-flex justify-content-around align-items-center gap-5 flex-lg-row flex-column" >
+          <div class="content">
+            <img src="./public/./images/menu/menu-item-2.png" alt="" />
+            <h4>Magnam Tiste</h4>
+            <p>Lorem, deren, trataro, filede, nerada</p>
 
+            <h5>$5.95</h5>
+          </div>
+          <div class="content">
+            <img src="./public/images/menu/menu-item-3.png" alt="" />
+            <h4>Lorem, ipsum.</h4>
+            <p>Lorem ,ipsum, dolor ,sit </p>
+            <h5>$14.95</h5>
+          </div>
+          <div class="content">
+            <img src="./public/images/menu/menu-item-4.png" alt="" />
+            <h4>Est Eligendi</h4>
+            <p>Lorem, deren, trataro, filede, nerada</p>
+            <h5>$8.95</h5>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!-- Testemonials -->
+     
 
-
-
-
-
-
-
-
+        
+    
+     
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./public/js/app.js"></script>
   </body>
