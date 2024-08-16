@@ -12380,7 +12380,7 @@ nav button {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: c;
+    flex-direction: column;
   }
   .content-menu .content {
     display: flex;
@@ -12392,6 +12392,73 @@ nav button {
   .content-menu .content img {
     width: 220px;
   }
+}
+.carousel-container {
+  height: 60vh;
+  background: rgba(191, 191, 191, 0.2745098039);
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+  gap: 2vw;
+}
+
+.left-caroussel {
+  width: 50%;
+  border-left: 3px solid #ce1212;
+  padding-left: 20px;
+}
+
+.slide img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.next, .previous {
+  display: none;
+}
+
+.bi-quote {
+  font-size: 20px;
+  color: rgba(206, 18, 18, 0.4588235294);
+}
+
+.bi-star-fill {
+  color: #ffc107;
+}
+
+.indicators-grp {
+  width: 100%;
+  padding: 2vh 0;
+  position: absolute;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.activeIndicator {
+  background-color: #ce1212;
 }
 
 /*# sourceMappingURL=app.css.map */
