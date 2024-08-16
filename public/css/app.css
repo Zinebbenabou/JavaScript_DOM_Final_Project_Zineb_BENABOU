@@ -11932,6 +11932,32 @@ textarea.form-control-lg {
     width: 300px;
   }
 }
+.booking {
+  background-color: rgba(191, 191, 191, 0.2745098039);
+  height: 70vh;
+}
+.booking .img img {
+  width: 100%;
+  height: 100%;
+}
+.booking .inputs-container .inputs input {
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+}
+.booking .inputs-container .text textarea {
+  width: 60vw;
+  height: 15vh;
+}
+.booking .inputs-container button {
+  padding: 10px;
+  background-color: #d94545;
+  color: #fff;
+  border-radius: 6px;
+  border: none;
+}
+
 .team-shape {
   position: absolute;
   top: 50%;
@@ -12062,6 +12088,214 @@ textarea.form-control-lg {
     padding: 10px;
   }
 }
+.footer {
+  background-color: #1f1f24;
+  padding: 7vh 0;
+}
+.footer .foot-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer .foot-top h6, .footer .foot-top .h6, .footer .foot-top p {
+  padding-top: 1vh;
+  color: #fff;
+}
+.footer .foot-top .info {
+  display: flex;
+  flex: row;
+  gap: 1vw;
+  justify-content: center;
+}
+.footer .foot-top .info i {
+  color: #ce1212;
+  font-size: xx-large;
+}
+.footer .footer-botum {
+  text-align: center;
+  padding-top: 5vh;
+}
+.footer .footer-botum p {
+  color: white;
+}
+.footer .footer-botum span {
+  color: #ce1212;
+}
+
+.iconSocialMedia {
+  padding-top: 2vh;
+}
+.iconSocialMedia i {
+  border: 1px solid rgba(117, 149, 176, 0.5568627451);
+  padding: 1vh 1vw;
+  border-radius: 55%;
+  color: #7595b0;
+  font-size: medium;
+}
+.iconSocialMedia i:hover {
+  border-color: #ce1212;
+  color: #ce1212;
+}
+
+.footer-separator {
+  border: none;
+  border-top: 1px solid #fff;
+  margin: 2vh 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.info-card {
+  box-shadow: 0 4px 8px 0 rgba(170, 168, 168, 0.2), 0 10px 20px 0 rgba(161, 157, 157, 0.19);
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.gallery-container {
+  display: flex;
+  align-items: center;
+  padding: 30vh 0;
+  position: relative;
+}
+
+.gallery-item {
+  height: 140px;
+  opacity: 1;
+  position: absolute;
+  transition: all 0.4s ease in-out;
+  width: 180px;
+  background-size: contain;
+}
+
+.gallery-item-1 {
+  left: 16vw;
+  opacity: 0.9;
+  transform: translateX(-50%);
+}
+
+.gallery-item-2, .gallery-item-4 {
+  height: 160px;
+  opacity: 0.8;
+  width: 200px;
+  z-index: 1;
+}
+
+.gallery-item-2 {
+  left: 32vw;
+  transform: translateX(-50%);
+}
+
+.gallery-item-3 {
+  box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.35);
+  height: 210px;
+  opacity: 1;
+  left: 50vw;
+  transform: translateX(-50%);
+  width: 240px;
+  z-index: 2;
+  border: 5px solid #d11212;
+}
+
+.gallery-item-4 {
+  left: 68vw;
+  transform: translateX(-50%);
+}
+
+.gallery-item-5 {
+  left: 84vw;
+  opacity: 0.9;
+  transform: translateX(-50%);
+}
+
+.gallery-controls {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+  height: 100px;
+}
+.gallery-controls button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0 50px;
+  padding: 0 12px;
+  text-transform: capitalize;
+}
+
+.gallery-controls-button:focus {
+  outline: none;
+}
+
+.gallery-controls-previous {
+  position: relative;
+}
+.gallery-controls-previous::before {
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  left: -30vw;
+  padding: 10px;
+  position: absolute;
+  top: 25vw;
+  transform: rotate(135deg) translateY(-50%);
+  transition: left 0.3s ease in-out;
+  width: 5px;
+}
+.gallery-controls-previous:hover::before {
+  left: -40vw;
+}
+
+.gallery-controls-next {
+  position: relative;
+}
+.gallery-controls-next::before {
+  border: solid #000;
+  border-width: 0px 5px 5px 0px;
+  content: "";
+  display: inline-block;
+  height: 5px;
+  right: -30vw;
+  padding: 10px;
+  position: absolute;
+  top: 45vw;
+  transform: rotate(-45deg) translateY(-50%);
+  transition: right 0.3s ease in-out;
+  width: 5px;
+}
+.gallery-controls-next:hover::before {
+  right: -40vw;
+}
+
+.gallery-nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+
+.gallery-nav li {
+  background-color: #ccc;
+  border-radius: 50%;
+  height: 10px;
+  margin: 0 5px;
+  width: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.gallery-nav .active {
+  background-color: #555;
+}
+
 @font-face {
   font-family: interFont;
   src: url(../../public/fonts/Comic_Neue,Inter/Inter/Inter-Italic-VariableFont_opsz,wght.ttf);

@@ -1,0 +1,117 @@
+.gallery
+    // width: 100vw
+    display: flex
+    flex-direction: row
+    align-items: center
+.gallery-container
+    display: flex
+    align-items: center
+    padding: 30vh 0
+    // max-width: 100px
+    position: relative
+.gallery-item
+    height: 140px
+    opacity: 1
+    position: absolute
+    transition: all 0.4s ease in-out
+    width: 180px
+
+    background-size: contain
+.gallery-item-1
+    left: 16vw
+    opacity: 0.9
+    transform: translateX(-50%)
+.gallery-item-2 , .gallery-item-4
+    height: 160px
+    opacity: 0.8
+    width: 200px
+    z-index: 1
+.gallery-item-2
+    left: 32vw
+    transform: translateX(-50%)
+.gallery-item-3
+    box-shadow: -2px 5px 33px 6px rgba(0,0 ,0 ,0.35 )
+    height: 210px
+    opacity: 1
+    left: 50vw
+    transform: translateX(-50%)
+    width: 240px
+    z-index: 2
+    border: 5px solid #d11212
+.gallery-item-4
+    left: 68vw
+    transform: translateX(-50%)
+.gallery-item-5
+    left: 84vw
+    opacity: 0.9
+    transform: translateX(-50%)
+
+.gallery-controls
+    display: flex
+    justify-content: center
+    margin: 25px 0
+    height: 100px
+    button
+        background-color: transparent
+        border: 0
+        cursor: pointer
+        font-size: 30px
+        margin: 0 50px
+        padding: 0 12px
+        text-transform: capitalize
+.gallery-controls-button
+    &:focus
+        outline: none
+.gallery-controls-previous
+    position: relative
+    &::before
+        border: solid #000
+        border-width: 0 5px 5px 0
+        content: ''
+        display: inline-block
+        height: 5px
+        left: -30vw
+        padding: 10px
+        position: absolute
+        top: 25vw
+        transform: rotate(135deg) translateY(-50%)
+        transition: left 0.30s ease in-out
+        width: 5px
+    &:hover::before
+        left: -40vw
+.gallery-controls-next
+    position: relative
+    &::before
+        border: solid #000
+        border-width: 0px 5px 5px 0px
+        content: ''
+        display: inline-block
+        height: 5px
+        right: -30vw
+        padding: 10px
+        position: absolute
+        top: 45vw
+        transform: rotate(-45deg) translateY(-50%)
+        transition: right 0.30s ease in-out
+        width: 5px
+    &:hover::before
+        right: -40vw
+.gallery-nav
+    display: flex
+    justify-content: center
+    list-style: none
+    padding: 0
+    position: absolute
+    bottom: -30px
+    width: 100%
+.gallery-nav
+    li
+        background-color: #ccc
+        border-radius: 50%
+        height: 10px
+        margin: 0 5px
+        width: 10px
+        cursor: pointer
+        transition: background-color 0.3s ease
+    .active
+        background-color: #555
